@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{4da569ef-33d8-41a3-ba3b-1a8e4d915bea}</ProjectGuid>
+    <RootNamespace>Engine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.22621.0\shared;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.22621.0\um;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Windows Kits\10\Lib\10.0.22621.0\um\x64;$(LibraryPath);$(LibraryPath)</LibraryPath>
+    <PublicIncludeDirectories>$(ProjectDir)Source\;$(ProjectDir);$(PublicIncludeDirectories)</PublicIncludeDirectories>
+    <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.22621.0\shared;C:\Program Files %28x86%29\Windows Kits\10\Include\10.0.22621.0\um;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Windows Kits\10\Lib\10.0.22621.0\um\x64;$(LibraryPath);$(LibraryPath)</LibraryPath>
+    <PublicIncludeDirectories>$(ProjectDir)Source\;$(ProjectDir);$(PublicIncludeDirectories)</PublicIncludeDirectories>
+    <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(LibraryPath);$(LibraryPath)</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);;$(IncludePath)</IncludePath>
+    <PublicIncludeDirectories>$(ProjectDir)Source\;$(ProjectDir);$(PublicIncludeDirectories)</PublicIncludeDirectories>
+    <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(LibraryPath);$(LibraryPath)</LibraryPath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);;$(IncludePath)</IncludePath>
+    <PublicIncludeDirectories>$(ProjectDir)Source\;$(ProjectDir);$(PublicIncludeDirectories)</PublicIncludeDirectories>
+    <AllProjectIncludesArePublic>true</AllProjectIncludesArePublic>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);WIN32_LEAN_AND_MEAN;WIN32_LEAN_AND_MEAN</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories);$(ProjectDir)Source</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);%(AdditionalDependencies);%(AdditionalDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);WIN32_LEAN_AND_MEAN;WIN32_LEAN_AND_MEAN</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories);$(ProjectDir)Source</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);%(AdditionalDependencies);%(AdditionalDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);WIN32_LEAN_AND_MEAN;WIN32_LEAN_AND_MEAN</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories);$(ProjectDir)Source</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d12.lib;dxgi.lib;d3dcompiler.lib;%(AdditionalDependencies);%(AdditionalDependencies);%(AdditionalDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);WIN32_LEAN_AND_MEAN;WIN32_LEAN_AND_MEAN</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories);$(ProjectDir)Source</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d12.lib;dxgi.lib;d3dcompiler.lib;%(AdditionalDependencies);%(AdditionalDependencies);%(AdditionalDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Config\d3dx12.h" />
+    <ClInclude Include="Source\Core\CoreType\PrimitivesMesh.h" />
+    <ClInclude Include="Source\Core\CoreType\Transform.h" />
+    <ClInclude Include="Source\Core\Interface\IEditor.h" />
+    <ClInclude Include="Source\Core\Interface\IScene.h" />
+    <ClInclude Include="Source\Core\Manager\Scene\SceneManager.h" />
+    <ClInclude Include="Source\Core\Manager\Script\ScriptManager.h" />
+    <ClInclude Include="Source\Core\Interface\IModule.h" />
+    <ClInclude Include="Source\Core\CoreType\Id.h" />
+    <ClInclude Include="Source\Core\Interface\IRender.h" />
+    <ClInclude Include="Source\Core\Manager\Module\ModuleManager.h" />
+    <ClInclude Include="Source\ImGui\IconsFontAwesome5.h" />
+    <ClInclude Include="Source\ImGui\ImGuiFileDialog\dirent\dirent.h" />
+    <ClInclude Include="Source\ImGui\ImGuiFileDialog\ImGuiFileDialog.h" />
+    <ClInclude Include="Source\ImGui\ImGuiFileDialog\ImGuiFileDialogConfig.h" />
+    <ClInclude Include="Source\ImGui\ImGuiFileDialog\stb\stb_image.h" />
+    <ClInclude Include="Source\ImGui\ImGuiFileDialog\stb\stb_image_resize2.h" />
+    <ClInclude Include="Source\ImGui\imgui_stdlib.h" />
+    <ClInclude Include="Source\Modules\Render\Editor\Editor.h" />
+    <ClInclude Include="Source\Engine.h" />
+    <ClInclude Include="Source\ImGui\imconfig.h" />
+    <ClInclude Include="Source\ImGui\imgui.h" />
+    <ClInclude Include="Source\ImGui\imgui_impl_dx12.h" />
+    <ClInclude Include="Source\ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="Source\ImGui\imgui_internal.h" />
+    <ClInclude Include="Source\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="Source\ImGui\imstb_textedit.h" />
+    <ClInclude Include="Source\ImGui\imstb_truetype.h" />
+    <ClInclude Include="Source\Modules\Input\Inputs.h" />
+    <ClInclude Include="Source\Modules\Scene\ModuleScene.h" />
+    <ClInclude Include="Source\Core\Interface\IScript.h" />
+    <ClInclude Include="Source\Modules\Time\Clock.h" />
+    <ClInclude Include="Source\Core\Interface\IComponent.h" />
+    <ClInclude Include="Source\Objects\GameObject.h" />
+    <ClInclude Include="Source\Modules\Render\Camera.h" />
+    <ClInclude Include="Source\Reseau\Client\Client.h" />
+    <ClInclude Include="Source\Reseau\Client\ClientImpl.h" />
+    <ClInclude Include="Source\Reseau\Client\ConnectionHandler.h" />
+    <ClInclude Include="Source\Reseau\Client\Message.h" />
+    <ClInclude Include="Source\Reseau\Client\ReceptionHandler.h" />
+    <ClInclude Include="Source\Reseau\Client\SendingHandler.h" />
+    <ClInclude Include="Source\Reseau\Serveur.h" />
+    <ClInclude Include="Source\Reseau\ServeurImpl.h" />
+    <ClInclude Include="Source\Reseau\Sockets\Error.h" />
+    <ClInclude Include="Source\Reseau\Sockets\Socket.h" />
+    <ClInclude Include="Source\Reseau\Sockets\TCPSocket.h" />
+    <ClInclude Include="Source\Reseau\UDP\AckHandler.h" />
+    <ClInclude Include="Source\Reseau\UDP\Datagram.h" />
+    <ClInclude Include="Source\Reseau\UDP\DistantClient.h" />
+    <ClInclude Include="Source\Reseau\UDP\Utils.h" />
+    <ClInclude Include="Source\Scripts\Script.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Core\CoreType\Transform.cpp" />
+    <ClCompile Include="Source\Core\CoreType\Vertex.cpp" />
+    <ClCompile Include="Source\Core\Manager\Module\ModuleManager.cpp" />
+    <ClCompile Include="Source\Core\Manager\Scene\SceneManager.cpp" />
+    <ClCompile Include="Source\Core\Manager\Script\ScriptManager.cpp" />
+    <ClCompile Include="Source\Engine.cpp" />
+    <ClCompile Include="Source\Core\CoreType\Id.cpp" />
+    <ClCompile Include="Source\ImGui\ImGuiFileDialog\ImGuiFileDialog.cpp" />
+    <ClCompile Include="Source\ImGui\imgui_stdlib.cpp" />
+    <ClCompile Include="Source\Modules\Render\Editor\Editor.cpp" />
+    <ClCompile Include="Source\ImGui\imgui.cpp" />
+    <ClCompile Include="Source\ImGui\imgui_demo.cpp" />
+    <ClCompile Include="Source\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="Source\ImGui\imgui_impl_dx12.cpp" />
+    <ClCompile Include="Source\ImGui\imgui_impl_win32.cpp" />
+    <ClCompile Include="Source\ImGui\imgui_tables.cpp" />
+    <ClCompile Include="Source\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="Source\Modules\Input\Inputs.cpp" />
+    <ClCompile Include="Source\Modules\Scene\ModuleScene.cpp" />
+    <ClCompile Include="Source\Objects\GameObject.cpp" />
+    <ClCompile Include="Source\Modules\Time\Clock.cpp" />
+    <ClCompile Include="Source\Modules\Render\Camera.cpp" />
+    <ClCompile Include="Source\Modules\Render\Renderer.cpp" />
+    <ClCompile Include="Source\Reseau\Client\Client.cpp" />
+    <ClCompile Include="Source\Reseau\Client\ClientImpl.cpp" />
+    <ClCompile Include="Source\Reseau\Client\ConnectionHandler.cpp" />
+    <ClCompile Include="Source\Reseau\Client\ReceptionHandler.cpp" />
+    <ClCompile Include="Source\Reseau\Client\SendingHandler.cpp" />
+    <ClCompile Include="Source\Reseau\Serveur.cpp" />
+    <ClCompile Include="Source\Reseau\ServeurImpl.cpp" />
+    <ClCompile Include="Source\Reseau\Sockets\Error.cpp" />
+    <ClCompile Include="Source\Reseau\Sockets\Socket.cpp" />
+    <ClCompile Include="Source\Reseau\Sockets\TCPSocket.cpp" />
+    <ClCompile Include="Source\Reseau\UDP\AckHandler.cpp" />
+    <ClCompile Include="Source\Reseau\UDP\DistantClient.cpp" />
+    <ClCompile Include="Source\Reseau\UDP\Utils.cpp" />
+    <ClCompile Include="Source\Scripts\Script.cpp" />
+    <ClInclude Include="Source\Core\CoreType\Mesh.h" />
+    <ClInclude Include="Source\Core\CoreType\Vertex.h" />
+    <ClInclude Include="Source\Modules\Display\Window.h" />
+    <ClInclude Include="Source\Modules\Render\DirectX\Dx12.h" />
+    <ClInclude Include="Source\Modules\Render\DirectX\Dx12Factory.h" />
+    <ClInclude Include="Source\Modules\Render\DirectX\DxObjects\Dx12ConstantBuffer.h" />
+    <ClInclude Include="Source\Modules\Render\DirectX\DxObjects\Dx12GraphicObject.h" />
+    <ClInclude Include="Source\Modules\Render\Renderer.h" />
+    <ClInclude Include="Source\Objects\Component\GraphicComponent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Core\CoreType\Mesh.cpp" />
+    <ClCompile Include="Source\Modules\Display\Window.cpp" />
+    <ClCompile Include="Source\Modules\Render\DirectX\Dx12.cpp" />
+    <ClCompile Include="Source\Modules\Render\DirectX\Dx12Factory.cpp" />
+    <ClCompile Include="Source\Modules\Render\DirectX\DxObjects\Dx12ConstantBuffer.cpp" />
+    <ClCompile Include="Source\Modules\Render\DirectX\DxObjects\Dx12GraphicObject.cpp" />
+    <ClCompile Include="Source\Objects\Component\GraphicComponent.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Config\Shaders\PixelShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Config\Shaders\VertexShader.hlsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\Core\Manager\Module\ModuleManager.inl" />
+    <None Include="Source\Core\Manager\Scene\SceneManager.inl" />
+    <None Include="Source\Core\Manager\Script\ScriptManager.inl" />
+    <None Include="Source\Objects\GameObject.inl" />
+    <None Include="Source\Reseau\UDP\Utils.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
